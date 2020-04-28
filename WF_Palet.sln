@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.28307.902
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleApp2WF_Palet", "ConsoleApp2WF_Palet\ConsoleApp2WF_Palet.csproj", "{7CD05222-691D-4C6D-82A0-B79E7D20EC6B}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WF_Palet", "ConsoleApp2WF_Palet\WF_Palet.csproj", "{7CD05222-691D-4C6D-82A0-B79E7D20EC6B}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

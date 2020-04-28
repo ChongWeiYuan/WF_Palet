@@ -1,0 +1,9 @@
+C:\Users\NAGAO\Documents\GitHub\WF_Palet\ConsoleApp2WF_Palet\bin\Debug\ConsoleApp2WF_Palet.exe.config
+C:\Users\NAGAO\Documents\GitHub\WF_Palet\ConsoleApp2WF_Palet\bin\Debug\ConsoleApp2WF_Palet.exe
+C:\Users\NAGAO\Documents\GitHub\WF_Palet\ConsoleApp2WF_Palet\bin\Debug\ConsoleApp2WF_Palet.pdb
+C:\Users\NAGAO\Documents\GitHub\WF_Palet\ConsoleApp2WF_Palet\obj\Debug\WF_Palet.csprojAssemblyReference.cache
+C:\Users\NAGAO\Documents\GitHub\WF_Palet\ConsoleApp2WF_Palet\obj\Debug\ConsoleApp2WF_Palet.Properties.Resources.resources
+C:\Users\NAGAO\Documents\GitHub\WF_Palet\ConsoleApp2WF_Palet\obj\Debug\WF_Palet.csproj.GenerateResource.cache
+C:\Users\NAGAO\Documents\GitHub\WF_Palet\ConsoleApp2WF_Palet\obj\Debug\WF_Palet.csproj.CoreCompileInputs.cache
+C:\Users\NAGAO\Documents\GitHub\WF_Palet\ConsoleApp2WF_Palet\obj\Debug\ConsoleApp2WF_Palet.exe
+C:\Users\NAGAO\Documents\GitHub\WF_Palet\ConsoleApp2WF_Palet\obj\Debug\ConsoleApp2WF_Palet.pdb
