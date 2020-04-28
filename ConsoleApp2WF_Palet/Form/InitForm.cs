@@ -51,6 +51,8 @@ namespace ConsoleApp2WF_Palet
 
             var EventHandler = this.InputQue.Peek();
             EventHandler.Invoke(new object(), new EventArgs());
+
+            this.InputQue.Clear();
         }
         #endregion
 
@@ -60,12 +62,16 @@ namespace ConsoleApp2WF_Palet
             try
             {
                 var setValue = int.Parse(this.textBox1.Text);
+
+                this.textBox1.ForeColor = Color.Black;
+
                 if (setValue < 0 || 100 < setValue) return;
                 this.Percent = setValue;
             }
             catch (Exception)
             {
                 this.progressBar1.Value = 0;
+                this.textBox1.ForeColor = Color.Red;
                 return;
             }
         }
