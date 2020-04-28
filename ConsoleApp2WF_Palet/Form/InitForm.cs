@@ -30,6 +30,9 @@ namespace ConsoleApp2WF_Palet
         #endregion
 
         #region プロパティ
+        /// <summary>
+        /// プログレスバーで表示される数値
+        /// </summary>
         public int Percent
         {
             get { return _percent; }
@@ -43,8 +46,13 @@ namespace ConsoleApp2WF_Palet
         #region イベントハンドラ
         private void textBox1_TextChanged(object sender, EventArgs e)
         {
+            //キュー登録で、実行間隔調整
             InputQue.Enqueue(SetProgressBar);
         }
+        /// <summary>
+        /// タイマー
+        /// </summary>
+        ///<remarks>インターバル設定間隔で実行される</remarks>
         private void InputTimer_Tick(object sender, EventArgs e)
         {
             if (InputQue.Count == 0) return;
@@ -57,19 +65,24 @@ namespace ConsoleApp2WF_Palet
         #endregion
 
         #region 関数
+        /// <summary>
+        /// プログレスバーに値を代入
+        /// </summary>        
         private void SetProgressBar(object sender, EventArgs e)
         {
             try
             {
                 var setValue = int.Parse(this.textBox1.Text);
-
                 this.textBox1.ForeColor = Color.Black;
 
+                //値域チェック
                 if (setValue < 0 || 100 < setValue) return;
+
                 this.Percent = setValue;
             }
+            //intキャスト失敗時
             catch (Exception)
-            {
+            {   
                 this.progressBar1.Value = 0;
                 this.textBox1.ForeColor = Color.Red;
                 return;
