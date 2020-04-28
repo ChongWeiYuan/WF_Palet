@@ -7,3 +7,4 @@ C:\Users\NAGAO\Documents\GitHub\WF_Palet\ConsoleApp2WF_Palet\obj\Debug\WF_Palet.
 C:\Users\NAGAO\Documents\GitHub\WF_Palet\ConsoleApp2WF_Palet\obj\Debug\WF_Palet.csproj.CoreCompileInputs.cache
 C:\Users\NAGAO\Documents\GitHub\WF_Palet\ConsoleApp2WF_Palet\obj\Debug\ConsoleApp2WF_Palet.exe
 C:\Users\NAGAO\Documents\GitHub\WF_Palet\ConsoleApp2WF_Palet\obj\Debug\ConsoleApp2WF_Palet.pdb
+C:\Users\NAGAO\Documents\GitHub\WF_Palet\ConsoleApp2WF_Palet\obj\Debug\ConsoleApp2WF_Palet.InitForm.resources
