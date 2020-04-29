@@ -46,6 +46,8 @@ namespace ConsoleApp2WF_Palet
         #region イベントハンドラ
         private void textBox1_TextChanged(object sender, EventArgs e)
         {
+            this.textBox1.ForeColor = Color.Black;
+
             //キュー登録で、実行間隔調整
             InputQue.Enqueue(SetProgressBar);
         }
@@ -72,8 +74,7 @@ namespace ConsoleApp2WF_Palet
         {
             try
             {
-                var setValue = int.Parse(this.textBox1.Text);
-                this.textBox1.ForeColor = Color.Black;
+                var setValue = int.Parse(this.textBox1.Text);                
 
                 //値域チェック
                 if (setValue < 0 || 100 < setValue) return;
