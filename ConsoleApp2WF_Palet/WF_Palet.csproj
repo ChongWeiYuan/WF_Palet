@@ -45,6 +45,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Form\base64.cs" />
     <Compile Include="Form\InitForm.cs">
       <SubType>Form</SubType>
     </Compile>

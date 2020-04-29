@@ -34,6 +34,10 @@
             this.InputTimer = new System.Windows.Forms.Timer(this.components);
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.txtBefore = new System.Windows.Forms.TextBox();
+            this.txtAfter = new System.Windows.Forms.TextBox();
+            this.btnConvert = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // textBox1
@@ -78,11 +82,51 @@
             this.label2.TabIndex = 3;
             this.label2.Text = "%";
             // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("MS UI Gothic", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
+            this.label3.Location = new System.Drawing.Point(12, 119);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(158, 27);
+            this.label3.TabIndex = 4;
+            this.label3.Text = "Base64 変換";
+            // 
+            // txtBefore
+            // 
+            this.txtBefore.Font = new System.Drawing.Font("MS UI Gothic", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
+            this.txtBefore.Location = new System.Drawing.Point(17, 168);
+            this.txtBefore.Name = "txtBefore";
+            this.txtBefore.Size = new System.Drawing.Size(240, 34);
+            this.txtBefore.TabIndex = 5;
+            // 
+            // txtAfter
+            // 
+            this.txtAfter.Font = new System.Drawing.Font("MS UI Gothic", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
+            this.txtAfter.Location = new System.Drawing.Point(17, 252);
+            this.txtAfter.Name = "txtAfter";
+            this.txtAfter.Size = new System.Drawing.Size(240, 34);
+            this.txtAfter.TabIndex = 6;
+            // 
+            // btnConvert
+            // 
+            this.btnConvert.Location = new System.Drawing.Point(95, 209);
+            this.btnConvert.Name = "btnConvert";
+            this.btnConvert.Size = new System.Drawing.Size(75, 33);
+            this.btnConvert.TabIndex = 7;
+            this.btnConvert.Text = "変換";
+            this.btnConvert.UseVisualStyleBackColor = true;
+            this.btnConvert.Click += new System.EventHandler(this.btnConvert_Click);
+            // 
             // InitForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(374, 139);
+            this.ClientSize = new System.Drawing.Size(344, 298);
+            this.Controls.Add(this.btnConvert);
+            this.Controls.Add(this.txtAfter);
+            this.Controls.Add(this.txtBefore);
+            this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.progressBar1);
@@ -101,6 +145,10 @@
         private System.Windows.Forms.Timer InputTimer;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.TextBox txtBefore;
+        private System.Windows.Forms.TextBox txtAfter;
+        private System.Windows.Forms.Button btnConvert;
     }
 }
 

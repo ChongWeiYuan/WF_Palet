@@ -31,7 +31,7 @@ namespace ConsoleApp2WF_Palet
 
         #region プロパティ
         /// <summary>
-        /// プログレスバーで表示される数値
+        /// プログレスバー表示数値(%)
         /// </summary>
         public int Percent
         {
@@ -64,11 +64,18 @@ namespace ConsoleApp2WF_Palet
 
             this.InputQue.Clear();
         }
+        /// <summary>
+        /// Base64変換
+        /// </summary>        
+        private void btnConvert_Click(object sender, EventArgs e)
+        {
+            txtAfter.Text = new Base64("UTF-8").Encode(txtBefore.Text);
+        }
         #endregion
 
         #region 関数
         /// <summary>
-        /// プログレスバーに値を代入
+        /// プログレスバーに値を設定
         /// </summary>        
         private void SetProgressBar(object sender, EventArgs e)
         {
@@ -90,5 +97,6 @@ namespace ConsoleApp2WF_Palet
             }
         }
         #endregion
+                
     }
 }
