@@ -81,10 +81,14 @@ namespace ConsoleApp2WF_Palet
         {
             try
             {
-                var setValue = int.Parse(this.textBox1.Text);                
+                var setValue = int.Parse(this.textBox1.Text);
 
                 //値域チェック
-                if (setValue < 0 || 100 < setValue) return;
+                if (setValue < 0 || 100 < setValue)
+                {
+                    this.textBox1.ForeColor = Color.Red;
+                    return;
+                } 
 
                 this.Percent = setValue;
             }
