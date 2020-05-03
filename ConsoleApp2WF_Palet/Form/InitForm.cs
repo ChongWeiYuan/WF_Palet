@@ -106,6 +106,8 @@ namespace ConsoleApp2WF_Palet
         Image[] images = new Image[] {Image.FromFile(@"pic1.bmp") };
         Image currentImage = null;
 
+        bool isFirst = false;
+
         private void pictureBox1_Paint(object sender, PaintEventArgs e)
         {
             if (currentImage != null)
@@ -124,7 +126,11 @@ namespace ConsoleApp2WF_Palet
                 currentImage = images[0];
             }
             //コントロールを再描画する。これがないと、新しい画像が表示されない。
-            this.pictureBox1.Invalidate();
+            if (!isFirst)
+            {
+                this.Refresh();
+                isFirst = true;
+            }
         }
     }
 }
