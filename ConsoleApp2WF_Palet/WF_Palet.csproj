@@ -81,7 +81,9 @@
   </ItemGroup>
   <ItemGroup />
   <ItemGroup>
+    <Content Include="ScreenShots\20200504.jpg" />
     <Content Include="Pic\pic1.bmp" />
+    <Content Include="ScreenShots\画面の変遷.txt" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
