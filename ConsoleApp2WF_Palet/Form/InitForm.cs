@@ -101,6 +101,30 @@ namespace ConsoleApp2WF_Palet
             }
         }
         #endregion
-                
+
+        //画像ファイルを読み込む(画像はexeと同じフォルダ内に配置)
+        Image[] images = new Image[] {Image.FromFile(@"pic1.bmp") };
+        Image currentImage = null;
+
+        private void pictureBox1_Paint(object sender, PaintEventArgs e)
+        {
+            if (currentImage != null)
+            {
+                //DrawImageメソッドで画像を描画する
+                e.Graphics.DrawImage(currentImage,
+                     0, 0, currentImage.Width, currentImage.Height);
+            }
+            //表示する画像を入れ替える
+            if (currentImage != images[0])
+            {
+                currentImage = images[0];
+            }
+            else
+            {
+                currentImage = images[0];
+            }
+            //コントロールを再描画する。これがないと、新しい画像が表示されない。
+            this.pictureBox1.Invalidate();
+        }
     }
 }
